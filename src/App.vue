@@ -3,21 +3,24 @@
    
     <Header1 />
     <MainTop />
-   
+
+    <MainBottom />   
     
   </div>
 
 </template>
 
 <script>
-import MainTop from './components/MainTop.vue'
 import Header1 from './components/Header1.vue'
+import MainTop from './components/MainTop.vue'
+import MainBottom from './components/MainBottom.vue'
 
 export default {
   name: 'App',
   components: {
+    Header1,
     MainTop,
-    Header1
+    MainBottom
 }
 }
 </script>

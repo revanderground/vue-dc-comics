@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="main-top">
          <div class="box-title">
             <div class="title"> --> Content goes here &lt;-- </div>
         </div>
@@ -21,7 +21,7 @@ export default {
         background-color: $darkColor;
     }
 
-    section{
+    .main-top{
         background-color: $darkColor;
         height:100px;
         @include my-container;

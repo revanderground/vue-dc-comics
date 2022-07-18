@@ -4,7 +4,7 @@
         <img src="../assets/img/dc-logo.png" class="logo-header">
 
         <ul>
-            <li v-for="(item, index) in headerItems" :key="index" :class="{ active: item.current}">
+            <li class="text-center" v-for="(item, index) in headerItems" :key="index" :class="{ active: item.current}">
                 <a :href="item.url">{{item.text}}</a>
             </li>
 
@@ -108,9 +108,11 @@ header{
             height: 100%;
             @include d-flex(center, '');
             li{
-                margin-left: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
                 height: 80px;
                 display:inline-block;
+           
                 @include d-flex('', center);
                 border-bottom: 4px solid transparent;
                 &.active,
@@ -122,6 +124,7 @@ header{
                     text-transform: uppercase;
                     font-size: .8rem;
                     font-weight: 600;
+                    text-align: center;
                 }
             }
         }
