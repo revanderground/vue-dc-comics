@@ -5,6 +5,7 @@
     <MainTop />
     <MainBottom />
     <FooterTop />   
+    <FooterBottom />  
     
   </div>
 
