@@ -2,7 +2,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-content-items d-flex ">
-                <div class="col-1">
+                <div class="col pt-4">
                     <h4>Dc Comics</h4>
                     <ul>
                         <li v-for="(link, index) in dcComicsLinks" :key="index">
@@ -17,7 +17,7 @@
                     </ul>
                 </div>
 
-                <div class="col-1">
+                <div class="col pt-4">
                     <h4>Dc</h4>
                     <ul>
                         <li v-for="(link, index) in dcLinks" :key="index">
@@ -25,7 +25,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-1">
+                <div class="col pt-4">
                     <h4>Sites</h4>
                     <ul>
                         <li v-for="(link, index) in sitesLinks" :key="index">
@@ -36,11 +36,10 @@
                     
                 </div>
 
-                <div class="footer-bg">
-           
-                </div>
 
-                
+                <div class="footer-bg mx-auto">  </div>
+                     
+
             </div>
             
         </div>
@@ -208,20 +207,13 @@ export default {
 
 footer{
 
-    height: 25rem;
+    height: 17rem;
     background-image: url("../assets/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 
     
-        .footer-bg{
-            width: 40%;
-            object-fit: cover;
-            background-image: url(../assets/img/dc-logo-bg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
+        
 }
 
 .footer-content{
@@ -231,9 +223,12 @@ footer{
     
     h4{
         text-transform: uppercase;
+        color:white;
+        font-size: 1rem;
+        font-weight: 600;
     }
     ul{
-        padding: 1rem 0;
+        padding: 0.6rem 0;
         li{
             font-size: .6rem;
             a{
@@ -241,7 +236,17 @@ footer{
             }
         }
     }
-    
+
+    .footer-bg{
+            width: 40%;
+            object-fit: cover;
+            background-image: url(../assets/img/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
 }
 
 </style>
