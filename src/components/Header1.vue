@@ -81,7 +81,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import "../styles/style.scss";
 
@@ -100,7 +100,7 @@ header{
 
         .logo-header{
             width:60px;
-            padding-bottom: 20px;
+           
         }
         
         height: 100%;

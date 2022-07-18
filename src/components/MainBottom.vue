@@ -56,7 +56,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "~bootstrap/scss/bootstrap.scss";
     @import "../styles/style.scss";
 
@@ -65,25 +65,23 @@ export default {
         background-color:$secondaryColor;
         .box-main{
             @include box;
-            height:150px;
+            height:130px;
 
             ul{
          
                 
                 li{
-                 
                     color: $primary;
                 
                    p{
                         color:$primary;
-                        font-size: 0.8rem;
-                      
+                        font-size: 0.81rem;
+                        font-weight: 500;
                     }
 
                     img{
                         height:45px;
-                      
-                        
+
                     }
 
 
@@ -96,7 +94,5 @@ export default {
 
 
     }
-
-    
 
 </style>
