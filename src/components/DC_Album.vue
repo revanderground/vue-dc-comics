@@ -1,10 +1,13 @@
 <template>
     <section id="DC_Album">
         <div class="album d-flex flex-wrap justify-content-center py-5">
-         
+
+
             <CardSingle class="album-card m-2" v-for="(card,index) in albumThumbs" :key="index" :oneCard="card" />
-     
+
+         
             <a href="#" class="load-more">load more</a>
+            
 
         </div>
 
@@ -128,6 +131,15 @@ export default {
 
     .album{
         @include box;
+
+        .album-card{
+            width:calc((100% / 6) - 1rem);
+        }
+
+        
+
+        
+        
 
     }
 

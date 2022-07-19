@@ -1,11 +1,17 @@
 <template>
-    <div class="wrapper-cards">
+    <div>
+            <div class="wrapper-cards">
+
                 <div class="card-image">
                     <img :src="oneCard.thumb">
                 </div>
                 <div class="card-title">
                     {{oneCard.series}}
                 </div>
+
+
+            </div>
+                
 
     </div>
   
@@ -16,16 +22,16 @@
 export default {
    
     props: {
-        oneCard: Objects
+        oneCard: Object
     }
 }
 </script>
 
 <style lang="scss" scoped>
 
- .album-card{
-            width:calc((100% / 6) - 1rem);
+   .wrapper-cards{
 
+         
              .card-image{
                 
                 width:100%;
@@ -42,7 +48,9 @@ export default {
                 text-transform: uppercase;
                 padding-top: 3px;
             }
- }
+        
+        }  
+
 
 
 </style>
