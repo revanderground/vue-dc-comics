@@ -2,21 +2,10 @@
     <section id="DC_Album">
         <div class="album d-flex flex-wrap justify-content-center py-5">
          
-            <div class="album-card m-2" v-for="(card,index) in albumThumbs" :key="index" >
-                <div class="card-image">
-                    <img :src="card.thumb">
-                </div>
-                <div class="card-title">
-                    {{card.series}}
-                </div>
-
-            </div>
-
-
+            <CardSingle class="album-card m-2" v-for="(card,index) in albumThumbs" :key="index" :oneCard="card" />
+     
             <a href="#" class="load-more">load more</a>
 
-            
-        
         </div>
 
 
@@ -24,7 +13,15 @@
 </template>
 
 <script>
+
+import CardSingle from "./CardSingle.vue";
+
 export default {
+
+
+    components:{
+        CardSingle
+    },
     
      data: function(){
     return { albumThumbs: [
@@ -131,28 +128,6 @@ export default {
 
     .album{
         @include box;
-
-         .album-card{
-            width:calc((100% / 6) - 1rem);
-
-             .card-image{
-                
-                width:100%;
-                overflow:hidden;
-                height: 9rem;
-                border:-1px;
-            }
-
-            .card-title{
-                color:white;
-                font-size: 0.8rem;
-                font-weight: 500;
-                text-align:center;
-                text-transform: uppercase;
-                padding-top: 3px;
-            }
-
-        }
 
     }
 
