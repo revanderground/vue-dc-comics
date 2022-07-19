@@ -1,20 +1,27 @@
 <template>
-    <section class="main-top">
-         <div class="box-jumbotron">
-            <div class="jumbotron"></div>
+    <div>
+        
+        <div class="main-top">
+            <div class="box-jumbotron">
+                <div class="jumbotron"></div>
+             </div>
         </div>
-    </section>
-   
+       
+    </div>
+
+  
     
 </template>
 
 <script>
 export default {
+    
+  
 
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../styles/style.scss";
     
     template{
@@ -23,20 +30,22 @@ export default {
 
     .main-top{
         background-color: $darkColor;
-        height:20rem;
+        height:25rem;
         @include my-container;
+
+        
+        .box-jumbotron{
+
+            .jumbotron{
+                height: 25rem;
+                background-image:url("../assets/img/jumbotron.jpg");
+                background-size: cover;
+            }
+        
+        }
        
     }
 
-    .box-jumbotron{
-
-        .jumbotron{
-            height: 25rem;
-            background-image:url("../assets/img/jumbotron.jpg");
-            background-size: cover;
-        }
-    
-    }
 
 
 
