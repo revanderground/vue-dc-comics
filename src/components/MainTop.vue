@@ -1,7 +1,7 @@
 <template>
     <section class="main-top">
-         <div class="box-title">
-            <div class="title"> --> Content goes here &lt;-- </div>
+         <div class="box-jumbotron">
+            <div class="jumbotron"></div>
         </div>
     </section>
    
@@ -23,20 +23,22 @@ export default {
 
     .main-top{
         background-color: $darkColor;
-        height:100px;
+        height:20rem;
         @include my-container;
-
-        .title{
-        color:$fontColorInvert;
-        padding-top: 20px;
-        font-size: 2rem;
+       
     }
 
-    .box-title{
-        @include box;
+    .box-jumbotron{
+
+        .jumbotron{
+            height: 25rem;
+            background-image:url("../assets/img/jumbotron.jpg");
+            background-size: cover;
+        }
+    
     }
 
-    }
+
 
     
     
