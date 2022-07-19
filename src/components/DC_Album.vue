@@ -1,6 +1,6 @@
 <template>
     <section id="DC_Album">
-        <div class="album d-flex flex-wrap py-5">
+        <div class="album d-flex flex-wrap justify-content-center py-5">
          
             <div class="album-card m-2" v-for="(card,index) in albumThumbs" :key="index" >
                 <div class="card-image">
@@ -10,8 +10,12 @@
                     {{card.series}}
                 </div>
 
-                
             </div>
+
+
+            <a href="#" class="load-more">load more</a>
+
+            
         
         </div>
 
@@ -150,9 +154,19 @@ export default {
 
         }
 
-   
+    }
 
-
+    a{
+        display: inline-block;
+        color: white;
+        width: 14rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $secondaryColor;
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 
    
