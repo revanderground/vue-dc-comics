@@ -38,6 +38,14 @@ export default {
                 overflow:hidden;
                 height: 9rem;
                 border:-1px;
+                transition: 0.5s ease;
+            }
+
+            .card-image:hover{
+                filter: saturate(0.6) opacity(0.5);
+                cursor: pointer;
+                scale: 1.05;
+
             }
 
             .card-title{

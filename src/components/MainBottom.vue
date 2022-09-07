@@ -64,12 +64,12 @@ export default {
   
         background-color:$secondaryColor;
         .box-main{
-            @include box;
+           
             height:130px;
+            
 
-            ul{
-         
-                
+            ul{         
+                @include box; 
                 li{
                     color: $primary;
                 

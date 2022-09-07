@@ -156,5 +156,9 @@ export default {
         text-align: center;
     }
 
+    .load-more:hover{
+        color: rgb(155, 218, 255)
+    }
+
    
 </style>
